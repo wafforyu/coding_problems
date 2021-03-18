@@ -1,7 +1,7 @@
 
 //import java.util.Scanner;
 
-public class FindTHEInString {
+public class FindTheInString {
     public void execute(){
 //        Scanner sc = new Scanner(System.in);
 //
@@ -25,7 +25,7 @@ public class FindTHEInString {
         System.out.println(ctr);
     }    
 }
-
+    
 /** MY OTHER SOLUTION USING SPLIT.
 import java.util.Scanner;
 class theCounter { 
