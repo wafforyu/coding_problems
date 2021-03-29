@@ -5,9 +5,19 @@
 #For example, words such as zzoooo and zzzoooooo are similar to word zoo but not the words such as zzooo and zzzooooo.
 
 string = input("enter zoo: ")
-def zoos(_string):
-    for(i in _string):
-        if(i == "z"):
-            ctr+= 1
+def zoos(string):
+    string_seperated = [x for x in string]
+    z_counter = 0
+    o_counter = 0
 
-#UNDONE!!
+    for i in string_seperated:
+        if i == 'z':
+            z_counter += 1
+        elif i == 'o':
+            o_counter += 1
+    if(z_counter * 2 == o_counter):
+        print("Yes")
+    else:
+        print("No")
+
+zoos(string)
