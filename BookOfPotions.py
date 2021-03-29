@@ -4,19 +4,19 @@
 #1xdigit1 + 2xdigit2 + 3xdigit3 + 4xdigit4 + 5xdigit5 + 6xdigit6 + 7xdigit7 + 8xdigit8 + 9xdigit9 + 10xdigit10 is divisible by 11.
 #Help Harry to find the book! 
 
-arr = [1,4,0,1,6,0,1,4,9,9]
+arr = input()
 
 def isbn_checker(arr):
     i = 1
     product_total = 0
-
+    arr = [int(x) for x in arr]
     for x in arr:
         product_total += x*i
         i += 1
 
     if product_total % 11 == 0:
-        return print("legal ISBN")
+        return print("Legal ISBN")
 
-    return print("illegal ISBN")
+    return print("Illegal ISBN")
 
 isbn_checker(arr)
